@@ -1,0 +1,24 @@
+*note: not using any datasets with EHR in it + only maternal/women's health content (removed ACI bench cause it had none)
+because they don't have that in LMICs
+* REMOVE CORRECT COLUMN FROM RESULTS OF OPEN ENDED INFERENCE
+*
+I'm using:
+MedHALT (safety)
+Mamabench (maternal health) 
+
+from MedHELM clinical decision support: 
+MedCalc-Bench 
+MTSamples
+Medec
+Medbullets 
+
+from MedHELM clinical note generation:
+MTsamples Procedures
+
+from MedHELM patient communication and education:
+MedicationQA
+MedDialog (source: https://www.kaggle.com/datasets/xuehaihe/medical-dialogue-dataset/data?select=1r09_i8nJ9c1nliXVGXwSqRYqklcHd9e2)
+MEDIQA-QA
+
+from L2M3 for international guidelines: 
+EPFL

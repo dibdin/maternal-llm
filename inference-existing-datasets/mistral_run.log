@@ -1,0 +1,63 @@
+WARNING: rouge_score not installed — ROUGE-L will be skipped
+WARNING: bert_score not installed — BERTScore will be skipped
+
+============================================================
+INFERENCE RUNNER
+  Model ID:   mistralai/mistral-small-3.2-24b-instruct
+  Model slug: mistral_small32
+  Pipelines:  mcq, medhalt, openended, shortanswer, rubric
+  Max rows:   unlimited
+  Dry run:    False
+============================================================
+
+
+############################################################
+# PIPELINE 1: MCQ
+############################################################
+  [SKIP] data/filtered/mamabench_afrimedqa.csv not found
+  [SKIP] data/filtered/mamabench_medmcqa.csv not found
+  [SKIP] data/filtered/mamabench_medqa_usmle.csv not found
+  [SKIP] data/filtered/medbullets.csv not found
+  [SKIP] data/filtered/medcalc_bench.csv not found
+
+
+############################################################
+# PIPELINE 2: MedHALT
+############################################################
+  [SKIP] data/filtered/medhalt_reasoning_FCT.csv not found
+  [SKIP] data/filtered/medhalt_reasoning_fake.csv not found
+  [SKIP] data/filtered/medhalt_reasoning_nota.csv not found
+
+
+############################################################
+# PIPELINE 3: Open-ended
+############################################################
+  [SKIP] data/filtered/medec.csv not found
+  [SKIP] mtsamples.csv not found
+  [SKIP] mtsamples.csv not found
+  [SKIP] data/filtered/medicationqa.csv not found
+  [SKIP] data/filtered/mediqa_qa.csv not found
+  [SKIP] data/filtered/epfl_guidelines_inference.csv not found
+  [SKIP] data/filtered/meddialog.json not found
+
+
+############################################################
+# PIPELINE 4: Short-answer (SAQ)
+############################################################
+  [SKIP] data/filtered/mamabench_kenya.csv not found
+  [SKIP] data/filtered/mamabench_whb.csv not found
+  [SKIP] data/filtered/mamabench_afrimedqa_saq.csv not found
+
+
+############################################################
+# PIPELINE 5: Rubric
+############################################################
+  [SKIP] data/filtered/mamabench_rubric.csv not found
+
+
+============================================================
+MASTER SUMMARY — mistralai/mistral-small-3.2-24b-instruct  (slug: mistral_small32)
+============================================================
+
+  All results saved to data/results/  (pattern: *_mistral_small32.csv)
+============================================================

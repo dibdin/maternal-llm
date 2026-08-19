@@ -1,0 +1,49 @@
+318 prompts
+Open ended conversation with clinician for clinical decision support
+2 topics: maternal health + neonatal care
+Who the scenario is about
+242 (76%) center on a maternal patient, 58 (18%) on a neonate or newborn, and 14 (4%) are told from the perspective of a health worker or system actor.
+Clinical domains (multi-label, so totals exceed 318)
+The dataset is heavily weighted toward neonatal prematurity/LBW (68 scenarios, 21%) and HIV/ART/PMTCT (46, 14%) — reflecting how dominant these are in Bangladesh and Zimbabwe epidemiology. The next tier: anemia/nutrition (32, 10%), hypertension/eclampsia (29, 9%), hemorrhage (25, 8%), obstructed labor and adolescent/child marriage (19 each, 6%). Birth asphyxia (17), neonatal sepsis (13), twins (14), stillbirth (12), maternal sepsis (12), and social/structural barriers (12) round out the mid-tier. Clinical calculations now appear as a labeled domain with 15 scenarios (5%).
+Task type — what the model is asked to do
+General clinical question (broad management): 112 (35%)
+Treatment / management plan: 102 (32%)
+Counseling / communication: 34 (11%)
+Referral / transfer / resources: 32 (10%)
+Emergency acute management: 25 (8%)
+Clinical calculation: 15 (5%)
+Monitoring / criteria / follow-up: 11 (3%)
+Ethics / consent / safeguarding: 9 (3%)
+Where it takes place
+Home birth or home setting is the most common single context at 59 scenarios (19%), followed by community health post/CHW visits (46, 14%) and district hospital (34, 11%). Rural/remote settings appear in 21 (7%), emergency units in 12 (4%). Only 3 scenarios are set at private clinics. The dataset is strongly oriented toward out-of-facility and low-resource care.
+Who is providing care
+A physician or clinician is present or consulted in 95 scenarios (30%), a nurse in 54 (17%), a CHW in 27 (8%), and a midwife in 22 (7%). Traditional birth attendants appear in 12 scenarios (4%), doulas in 4, and spiritual birth attendants in 2 — covering the full informal care provider spectrum present in LMIC settings.
+Maternal age (where specified, n = 253)
+47% of maternal patients are aged 25–34, 34% are 18–24, 11% are adolescents (≤17), and 8% are ≥35. The adolescent representation is intentionally elevated given the high child marriage rates in Bangladesh and Zimbabwe.
+
+Prompt 
+You are are AI clinical decision support tool, conversing with a clinician or listening in on conversation between two clinicians or a clinician and a patient in [LMIC].
+You must extract the following information about the patient from the user input. You must identify the main question being asked about this patient by any of the user. You must provide your answer. 
+Patient:
+Age: [extract from user input]
+Gender: [extract from user input]
+Symptoms: [extract from user input]
+Vitals: [extract from user input]
+Medical history: [extract from user input]
+Medication:  [extract from user input]
+Existing interventions:  [extract from user input]
+Country resources:  [extract from user input]
+Language:  [extract from user input]
+Cultural and contextual factors:  [extract from user input]
+Question: [extract from user input].
+Answer: 
+Must be accurate
+Must be clear
+Must be complete
+Must be safe
+Must not be a hallucination
+Must be aware of local [LMIC] resources
+Must be contextually aware 
+Must identify urgency
+Must present reasoning
+Must follow instructions
